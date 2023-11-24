@@ -273,14 +273,21 @@ a {
         transform: translateY(-100%);
         transition: transform 1s ease;
         overflow-y: scroll;
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .navbar a {
+        border-bottom: var(--border-main-color);
+        width: 100%;
     }
 
     .navbar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
         transition: transform 1s ease;
-    }
-
-    .navbar.active {
-        display: block;
         transform: translateY(0%);
     }
 

@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let menu = document.querySelector('#hamburg i')
 
     menu.addEventListener('click', () => {
-        menu.classList.toggle('bx-x')
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('active')
     })
 });

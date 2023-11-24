@@ -35,6 +35,8 @@
     --box-shadow-products: 0 6px 10px rgba(0, 0, 0, .2);
     --box-shadow-drop-down: 0 3px 4px rgba(0, 0, 0, .2);
     --box-shadow-green: 0 3px 5px rgb(24 168 0);
+
+    --swiper-navigation-size: 2rem !important;
 }
 
 html {
@@ -183,6 +185,60 @@ a {
     color: var(--text-color-dark);
 }
 
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    /* padding-top: 0; */
+}
+
+.hero .swiper {
+    max-height: 100vh;
+    height: 110vh;
+}
+
+.hero .swiper-slide {
+    position: relative;
+}
+
+.hero .swiper-slide::after {
+    position: absolute;
+    background-color: #054e449a;
+    inset: 0;
+    content: ' ';
+}
+
+.hero .swiper-button-next,
+.hero .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 55%);
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+}
+
+.hero .swiper-button-next:after,
+.hero .swiper-button-prev:after {
+    display: none;
+}
+
+.hero:hover .swiper-button-next {
+    background: url('../img/arrow-right.png') no-repeat;
+    background-size: contain;
+}
+
+.hero:hover .swiper-button-prev {
+    background: url('../img/arrow-left.png') no-repeat;
+    background-size: contain;
+}
+
+.hero:hover .swiper-button-next,
+.hero:hover .swiper-button-prev {
+    -moz-transition: all ease-in .4s;
+    -ms-transition: all ease-in .4s;
+    -o-transition: all ease-in .4s;
+    -webkit-transition: all ease-in .4s;
+    transition: all ease-in .4s;
+}
 
 /* responsive breakpoints less than 5200px  */
 @media (width<=5200px) {

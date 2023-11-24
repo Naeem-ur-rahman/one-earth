@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
     // header scroll script
-
     window.addEventListener('scroll', function () {
         var topHeader = document.querySelector('.header-up');
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -11,4 +10,11 @@ window.addEventListener('DOMContentLoaded', () => {
             topHeader.classList.add('active')
         }
     });
+
+    let navbar = document.querySelector('.navbar')
+    let menu = document.querySelector('#hamburg i')
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('bx-x')
+    })
 });

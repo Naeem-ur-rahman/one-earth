@@ -424,6 +424,10 @@ textarea {
 }
 
 /* property section */
+.villas-sale {
+    background-color: var(--bg-second-color);
+}
+
 .property-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -357,6 +357,65 @@ textarea {
     cursor: pointer;
 }
 
+/* Catergoy Property section */
+.categoires-property {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.category-item {
+    background-color: var(--bg-third-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+    border: var(--border-main-color);
+    box-shadow: var(--box-shadow-products);
+}
+
+.category-item:hover {
+    background-color: var(--main-color);
+}
+
+.category-item p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-dark);
+    transition: color .3s ease;
+}
+
+.category-item:hover p {
+    color: var(--bg-color);
+}
+
+.category-item span {
+    background-color: var(--main-color);
+    border-radius: 100%;
+    width: 13rem;
+    height: 13rem;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: var(--border-main-color);
+    border-color: var(--bg-third-color);
+}
+
+.category-item span img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
 /* responsive breakpoints less than 5200px  */
 @media (width<=5200px) {
     html {
@@ -471,6 +530,11 @@ textarea {
     .header-up .links {
         display: none;
     }
+
+    /* Category section */
+    .categoires-property {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (width<=768px) {
@@ -530,6 +594,11 @@ textarea {
     .hero-form {
         left: calc(2rem);
         right: calc(2rem);
+    }
+
+    /* Category section */
+    .categoires-property {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

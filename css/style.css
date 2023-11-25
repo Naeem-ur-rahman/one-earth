@@ -499,6 +499,18 @@ textarea {
 }
 
 @media only screen and (max-width: 480px) {
+    .carosel-heading {
+        font-size: 2.5rem;
+    }
+
+    .carosel-heading-1 {
+        font-size: 2.5rem;
+    }
+
+    /* .hero-form {
+        top: 40rem;
+    } */
+
     .hero-form form .form-line {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -510,6 +522,11 @@ textarea {
         right: calc(2rem);
     }
 
+    .hero:hover .swiper-button-next,
+    .hero:hover .swiper-button-prev {
+        display: none;
+    }
+
     .hero-form {
         left: calc(2rem);
         right: calc(2rem);
@@ -517,16 +534,21 @@ textarea {
 }
 
 @media only screen and (max-width: 380px) {
-    .carosel-heading {
-        font-size: 2.5rem;
-    }
-
-    .carosel-heading-1 {
-        font-size: 2.5rem;
-    }
 
     .hero .swiper-slide .details {
         top: 4rem;
+    }
+
+    .hero .swiper-slide .details .plan {
+        gap: 2rem;
+    }
+
+    .hero .swiper {
+        min-height: 87rem;
+    }
+
+    .hero-form {
+        top: 48rem;
     }
 }
 

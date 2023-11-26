@@ -18,4 +18,20 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('bx-x');
         navbar.classList.toggle('active')
     })
+
+    let dubai_head_items = document.querySelectorAll('.dubai-area-container .head-item')
+    let dubai_body_items = document.querySelectorAll('.dubai-area-container .body-item')
+
+    for (let i = 0; i < dubai_head_items.length; i++) {
+        dubai_head_items[i].addEventListener('click', () => {
+            dubai_head_items.forEach(item => {
+                item.classList.remove('active');
+            });
+            dubai_body_items.forEach(body => {
+                body.classList.remove('active');
+            })
+            dubai_head_items[i].classList.add('active');
+            dubai_body_items[i].classList.add('active');
+        });
+    }
 });

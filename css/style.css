@@ -12,7 +12,8 @@
 }
 
 :root {
-    --main-color: #054e44;
+    /* --main-color: #054e44; */
+    --main-color: #128d7d;
     --bg-color: #fff;
     --bg-second-color: #f7f8f9;
     --bg-third-color: #f4f4f4;

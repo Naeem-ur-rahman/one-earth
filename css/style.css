@@ -445,6 +445,7 @@ textarea {
     height: max-content;
     color: var(--text-color-dark);
     box-shadow: var(--box-shadow);
+    background-color: var(--bg-color);
     border-radius: 1rem;
     transition: box-shadow .3s ease, transform .1s ease;
 }
@@ -498,6 +499,10 @@ textarea {
 }
 
 /*  Dubai Areas section */
+.dubai-area {
+    background-color: var(--bg-third-color);
+}
+
 .dubai-area>.text {
     padding-bottom: 1rem;
 }
@@ -519,6 +524,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    background-color: var(--bg-color);
 }
 
 .dubai-area-container .head-item {
@@ -562,7 +568,7 @@ textarea {
 
 .dubai-area-container .body-item::after {
     position: absolute;
-    content: ' ';
+    content: '';
     background-color: #054e4465;
     inset: 0;
     z-index: 1;
@@ -581,6 +587,11 @@ textarea {
 
 .dubai-area-container .body-item .details .carosel-text {
     color: var(--text-color-light);
+}
+
+/* Apartment rent */
+.apartment-rent {
+    background-color: var(--bg-third-color);
 }
 
 

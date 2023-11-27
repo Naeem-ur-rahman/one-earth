@@ -29,11 +29,11 @@ var swiper = new Swiper("#brokers-carosel", {
 	breakpoints: {
 		325: {
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 5,
 		},
 		414: {
 			slidesPerView: 2,
-			spaceBetween: 10,
+			spaceBetween: 5,
 		},
 		620: {
 			slidesPerView: 3,

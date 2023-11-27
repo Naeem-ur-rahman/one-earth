@@ -127,6 +127,15 @@ textarea {
     font-weight: 500;
 }
 
+.broker-heading {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.broker-text {
+    font-size: 1.6rem;
+}
+
 .btn {
     padding: 1rem 2rem;
     background-color: var(--main-color);
@@ -135,6 +144,11 @@ textarea {
     font-weight: 500;
     border-radius: .3rem;
     border: .1rem solid;
+    display: block;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn.reverse {
@@ -593,6 +607,69 @@ textarea {
 /* Apartment rent */
 .apartment-rent {
     background-color: var(--bg-third-color);
+}
+
+/* Broker section */
+.broker-item {
+    border: var(--border-main-color);
+    border-radius: .5rem;
+    cursor: grab;
+}
+
+.broker-item .head {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.broker-item .head img {
+    width: 3rem;
+}
+
+.broker-item .head .broker-heading {
+    color: var(--text-color-light);
+}
+
+.broker-item .body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.broker-item .body .profile {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.broker-item .broker-text {
+    color: grey;
+}
+
+.broker-item .body .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.broker-item .body .broker-text.place {
+    padding: 1rem 0;
+}
+
+.broker-item .body a.broker-text {
+    text-decoration: underline;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.broker-item .body .btn {
+    width: 100%;
 }
 
 

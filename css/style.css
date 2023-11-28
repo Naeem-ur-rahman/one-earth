@@ -756,6 +756,35 @@ textarea {
     margin: 1rem 0;
 }
 
+/* Our Partners section */
+
+.partners {
+    text-align: center;
+}
+
+.partners .heading {
+    padding-top: 1rem;
+}
+
+#partners-swiper {
+    padding: 2rem 0;
+}
+
+#partners-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: var(--border);
+}
+
+#partners-swiper .swiper-slide img {
+    width: 100%;
+    height: 14rem;
+    object-fit: contain;
+}
+
+
 /* responsive breakpoints less than 5200px  */
 
 @media (width<=5200px) {

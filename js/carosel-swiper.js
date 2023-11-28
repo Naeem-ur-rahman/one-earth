@@ -77,3 +77,35 @@ var swiper = new Swiper("#clients-carosel", {
 	},
 	grabCursor: true,
 });
+
+//partners-swiper
+var swiper3 = new Swiper("#partners-swiper", {
+	slidesPerView: 2,
+	spaceBetween: 0,
+	centeredSlides: false,
+	rewind: true,
+	loopedSlides: 5,
+	grabCursor: true,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	autoplay: {
+		delay: 4000,
+	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 5,
+		},
+		991: {
+			slidesPerView: 4,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		414: {
+			slidesPerView: 2,
+		},
+	},
+	loop: true,
+});

@@ -50,3 +50,30 @@ var swiper = new Swiper("#brokers-carosel", {
 	},
 	grabCursor: true,
 });
+
+var swiper = new Swiper("#clients-carosel", {
+	slidesPerView: 1,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	autoplay: {
+		delay: 4000,
+		// disableOnInteraction: true,
+	},
+	breakpoints: {
+		414: {
+			slidesPerView: 1,
+			spaceBetween: 5,
+		},
+		766: {
+			slidesPerView: 2,
+			spaceBetween: 15,
+		},
+		1025: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	},
+	grabCursor: true,
+});

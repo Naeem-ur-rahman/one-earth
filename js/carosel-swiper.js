@@ -49,6 +49,7 @@ var swiper = new Swiper("#brokers-carosel", {
 		},
 	},
 	grabCursor: true,
+	loop: true,
 });
 
 var swiper = new Swiper("#clients-carosel", {
@@ -76,6 +77,7 @@ var swiper = new Swiper("#clients-carosel", {
 		},
 	},
 	grabCursor: true,
+	loop: true,
 });
 
 //partners-swiper

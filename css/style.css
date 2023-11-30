@@ -507,10 +507,17 @@ textarea {
 
 .property-detail p {
     font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
 
 .property-detail .line p {
     font-weight: 600;
+}
+
+.property-detail .line p i {
+    font-size: 2rem;
 }
 
 .property-detail>p {

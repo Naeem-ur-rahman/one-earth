@@ -137,11 +137,11 @@ textarea {
 }
 
 .footer-heading {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .footer-text {
-    font-size: 1.4rem
+    font-size: 1.5rem
 }
 
 .btn {
@@ -1137,6 +1137,11 @@ textarea {
     /* property section */
     .property-grid {
         grid-template-columns: repeat(1, 1fr)
+    }
+
+    /* Footer section */
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }

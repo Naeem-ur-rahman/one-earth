@@ -1007,7 +1007,7 @@ textarea {
         left: 0;
         right: 0;
         width: 100%;
-        min-height: 88vh;
+        min-height: calc(100vh - 5rem);
         padding-top: 1rem;
         border-top: var(--border-main-color);
         display: none;
@@ -1016,6 +1016,7 @@ textarea {
         overflow-y: scroll;
         padding: 1rem;
         font-size: 1.6rem;
+        overflow-y: scroll;
     }
 
     .navbar-item {
@@ -1051,11 +1052,20 @@ textarea {
         padding-bottom: 1rem;
     }
 
-    .navbar-item.active .nav-dropdown {
+    .navbar-item .nav-dropdown.active {
         position: static;
         visibility: visible;
         z-index: 10;
         width: 100%;
+        padding: 1rem;
+        border: var(--border-main-color);
+        border-top: none;
+        transition: none;
+        background-color: var(--main-color);
+    }
+
+    .navbar-item .nav-dropdown.active a {
+        color: var(--bg-color);
     }
 
     .header-up .links {

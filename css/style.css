@@ -172,6 +172,10 @@ textarea {
     flex-wrap: wrap;
 }
 
+.disable-pointer {
+    pointer-events: none;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -254,17 +258,60 @@ textarea {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .navbar a {
     color: var(--main-color);
-    transition: color .5s ease;
+    transition: color .3s ease, background-color .3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar a:hover {
-    color: var(--text-color-dark);
+.navbar-item .nav-dropdown a:hover {
+    color: var(--text-color-light);
+    background-color: var(--main-color);
+}
+
+.navbar-item {
+    position: relative;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item>a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-item .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 1rem);
+    background-color: var(--bg-color);
+    width: max-content;
+    display: grid;
+    transition: visibility .1s ease-in-out;
+    visibility: hidden;
+    box-shadow: var(--box-shadow-drop-down);
+}
+
+.navbar-item .nav-dropdown>a {
+    padding: 1rem 2rem;
+    justify-content: start;
+}
+
+.navbar-item:hover .nav-dropdown {
+    visibility: visible;
+    transition: visibility .1s ease-in-out;
+}
+
+.header-down .btn {
+    font-size: 1.5rem;
 }
 
 .hero {
@@ -971,9 +1018,18 @@ textarea {
         font-size: 1.6rem;
     }
 
+    .navbar-item {
+        width: 100%;
+    }
+
     .navbar a {
         border-bottom: var(--border-main-color);
         width: 100%;
+        justify-content: start;
+    }
+
+    .navbar-item:hover .nav-dropdown {
+        visibility: hidden;
     }
 
     .navbar.active {
@@ -983,6 +1039,23 @@ textarea {
         justify-content: start;
         transition: transform 1s ease;
         transform: translateY(0%);
+    }
+
+    .navbar-item {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-item>a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navbar-item.active .nav-dropdown {
+        position: static;
+        visibility: visible;
+        z-index: 10;
+        width: 100%;
     }
 
     .header-up .links {

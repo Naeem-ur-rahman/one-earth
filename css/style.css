@@ -245,6 +245,7 @@ textarea {
     background-color: var(--bg-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    box-shadow: var(--box-shadow);
 }
 
 .logo {
@@ -749,6 +750,7 @@ textarea {
     border-radius: 100%;
     overflow: hidden;
     margin-bottom: 2rem;
+    border: var(--border-main-color);
 }
 
 .broker-item .broker-text {
@@ -970,11 +972,14 @@ textarea {
     position: relative;
 }
 
+.sticky-buy {
+    position: sticky;
+    top: calc(7rem + 1rem);
+}
+
 .property-buy-item-1 {
     border: var(--border);
     border-radius: 1rem;
-    position: sticky;
-    top: calc(8rem + 1rem);
 }
 
 .property-buy-item-1 img {
@@ -993,6 +998,21 @@ textarea {
     align-items: center;
     gap: .5rem;
     text-align: center;
+}
+
+.property-searches {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding-top: 2rem;
+}
+
+.property-searches a {
+    color: var(--text-color-dark);
+}
+
+.property-searches a:hover {
+    text-decoration: underline;
 }
 
 .property-buy-item .broker-text-1,
@@ -1137,6 +1157,10 @@ textarea {
 
     .hero-form {
         top: 64rem;
+    }
+
+    .property-buy-item-1 img {
+        height: 30rem;
     }
 }
 
@@ -1284,6 +1308,10 @@ textarea {
 
     .buy-grid {
         grid-template-columns: 100%;
+    }
+
+    .property-buy-item-1 img {
+        height: 100%;
     }
 }
 

@@ -988,6 +988,7 @@ textarea {
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     display: flex;
+    gap: 1rem;
 }
 
 .property-buy-item>.down {
@@ -1250,6 +1251,7 @@ textarea {
     /* Buy page */
     .buy-detail-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .buy-grid {
@@ -1299,6 +1301,11 @@ textarea {
     }
 
     /* Buy Page */
+
+    .banner img {
+        height: 27rem;
+    }
+
     .property-buy-item>.up {
         flex-direction: column;
     }
@@ -1374,6 +1381,10 @@ textarea {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* Buy Page */
+    .banner img {
+        height: 22rem;
+    }
 }
 
 @media only screen and (max-width: 330px) {}

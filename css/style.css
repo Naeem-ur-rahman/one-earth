@@ -897,6 +897,34 @@ textarea {
     color: var(--text-color-light);
 }
 
+.banner {
+    padding: 0;
+    padding-top: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 34rem;
+    object-fit: cover;
+}
+
+.banner::after {
+    position: absolute;
+    background-color: #054e449a;
+    inset: 0;
+    content: ' ';
+}
+
+.banner .content {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+}
+
 
 /* responsive breakpoints less than 5200px  */
 

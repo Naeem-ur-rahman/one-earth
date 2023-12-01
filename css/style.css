@@ -1092,6 +1092,18 @@ textarea {
     border-top-left-radius: inherit;
 }
 
+/* property-for-sale */
+.property-for-sale {
+    background-color: var(--bg-third-color);
+}
+
+.property-for-sale p {
+    padding-bottom: 1.5rem;
+    color: var(--text-color-dark-heading);
+    text-align: justify;
+}
+
+
 /* responsive breakpoints less than 5200px  */
 
 @media (width<=5200px) {

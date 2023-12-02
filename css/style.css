@@ -1103,6 +1103,91 @@ textarea {
     text-align: justify;
 }
 
+/* property-detail-page */
+.property-detail-page {
+    padding-top: 11rem;
+}
+
+.breadcrum {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 1rem;
+    background-color: var(--bg-third-color);
+    padding: 1.5rem;
+    border-radius: .4rem;
+    flex-wrap: wrap;
+}
+
+.breadcrum a {
+    color: var(--text-color-dark);
+    font-weight: 500;
+}
+
+.breadcrum a:hover {
+    text-decoration: underline;
+}
+
+.breadcrum span {
+    color: grey;
+}
+
+.property-detail-grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.property-detail-grid>.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.property-detail-grid>.right {
+    padding: 0 3rem;
+    position: relative;
+}
+
+.sticky-property-detail {
+    position: sticky;
+    top: calc(7rem + 1rem);
+}
+
+.carosel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.carosel-grid-item {
+    height: 15rem;
+    cursor: pointer;
+}
+
+.carosel-grid-item:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: 31rem;
+}
+
+.carosel-grid-item:nth-child(2) {
+    grid-row: 1/2;
+}
+
+.carosel-grid-item:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.carosel-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /* responsive breakpoints less than 5200px  */
 
@@ -1173,6 +1258,14 @@ textarea {
 
     .property-buy-item-1 img {
         height: 30rem;
+    }
+
+    .carosel-grid-item {
+        height: 20rem;
+    }
+
+    .carosel-grid-item:nth-child(1) {
+        height: 41rem;
     }
 }
 
@@ -1325,6 +1418,11 @@ textarea {
     .property-buy-item-1 img {
         height: 100%;
     }
+
+    /* Property-detail page */
+    .property-detail-grid {
+        grid-template-columns: 100%;
+    }
 }
 
 @media (width<601px) {
@@ -1399,6 +1497,25 @@ textarea {
     .property-buy-item>.up>.left img {
         border-top-right-radius: inherit;
     }
+
+    /* Property-detail page */
+    .breadcrum {
+        gap: .5rem;
+        font-size: 1.4rem;
+    }
+
+    .carosel-grid {
+        gap: .5rem;
+    }
+
+    .carosel-grid-item {
+        height: 11rem;
+    }
+
+    .carosel-grid-item:nth-child(1) {
+        height: 22.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 414px) {

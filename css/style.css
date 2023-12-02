@@ -1325,6 +1325,37 @@ section .links a {
     width: 100%;
 }
 
+.map-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.map {
+    background-color: var(--bg-third-color);
+    height: 50rem;
+    width: 85%;
+}
+
+
+.similar-properties .heading {
+    text-align: center;
+}
+
+.similar-properties #properties-carosel {
+    padding: 2rem 0;
+}
+
+.similar-properties .swiper-slide {
+    box-shadow: var(--box-shadow-products);
+    border-radius: 1rem;
+}
+
+.similar-properties .swiper-slide .property-item img {
+    height: 25rem;
+}
+
 /* responsive breakpoints less than 5200px  */
 
 @media (width<=5200px) {
@@ -1657,6 +1688,9 @@ section .links a {
         grid-template-columns: 1fr 1fr;
     }
 
+    .similar-properties .swiper-slide .property-item img {
+        height: 30rem;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1711,6 +1745,11 @@ section .links a {
     /* Buy Page */
     .banner img {
         height: 22rem;
+    }
+
+    /* Property-detail page */
+    .similar-properties .swiper-slide .property-item img {
+        height: 25rem;
     }
 }
 

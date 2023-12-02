@@ -1162,6 +1162,8 @@ textarea {
 .sticky-property-detail {
     position: sticky;
     top: calc(7rem + 1rem);
+    display: flex;
+    justify-content: center;
 }
 
 .carosel-grid {
@@ -1230,6 +1232,63 @@ textarea {
     gap: .5rem;
     padding: 1rem 0rem;
     list-style: inside;
+}
+
+.agent-profile-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow-products);
+    padding: 1rem 1rem;
+    width: 35rem;
+}
+
+.agent-profile-item .profile {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: var(--border-main-color);
+    overflow: hidden;
+}
+
+.agent-profile-item .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.agent-profile-item .heading {
+    color: var(--main-color);
+    padding-bottom: 0rem;
+}
+
+.agent-profile-item .broker-text {
+    color: grey;
+}
+
+.agent-profile-item .broker-heading {
+    color: var(--main-color);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    font-size: 2.5rem;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--text-color-light);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100rem;
+    box-shadow: var(--box-shadow-whatsapp);
 }
 
 /* responsive breakpoints less than 5200px  */
@@ -1465,6 +1524,7 @@ textarea {
     /* Property-detail page */
     .property-detail-grid {
         grid-template-columns: 100%;
+        gap: 4rem;
     }
 }
 

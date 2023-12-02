@@ -136,6 +136,10 @@ textarea {
     font-size: 1.6rem;
 }
 
+.broker-text.bold {
+    font-weight: 500;
+}
+
 .broker-heading-1 {
     font-size: 1.9rem;
     font-weight: 600;
@@ -143,6 +147,10 @@ textarea {
 
 .broker-text-1 {
     font-size: 1.4rem;
+}
+
+.broker-text-1.bold {
+    font-weight: 500;
 }
 
 .footer-heading {
@@ -1143,6 +1151,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: var(--bg-second-color);
 }
 
 .property-detail-grid>.right {
@@ -1160,6 +1169,7 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .carosel-grid-item {
@@ -1188,6 +1198,39 @@ textarea {
     object-position: center;
 }
 
+.property-info {
+    padding: 0rem 1rem;
+}
+
+.property-info .broker-heading {
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.property-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.property-info-grid i {
+    font-size: 2rem;
+}
+
+.property-info>.broker-text {
+    padding: 1rem 0;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.property-info-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: 1rem 0rem;
+    list-style: inside;
+}
 
 /* responsive breakpoints less than 5200px  */
 
@@ -1514,6 +1557,10 @@ textarea {
 
     .carosel-grid-item:nth-child(1) {
         height: 22.5rem;
+    }
+
+    .property-info-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
